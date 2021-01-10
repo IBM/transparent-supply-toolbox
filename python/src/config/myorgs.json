@@ -1,0 +1,13 @@
+{
+    "orgs": [
+        {
+            "name": "Your Organization Name",
+            "orgid": "your-org-id",
+            "env" : "environment is prod or sandbox ...",
+            "apikey": "your api key",
+            "serviceId": "ServiceId-xxxx",
+            "companyPrefixes" : ["112233", "11223344", "(list of your company prefixes)"],
+            "headQuartersGLN" : "112233.yourCorporateIdentity"
+        }
+    ]
+}

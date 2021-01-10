@@ -1,0 +1,32 @@
+{
+    "urls": {
+        "hosts": {
+            "prod": "https://food.ibm.com",
+            "sandbox": "https://sandbox.food.ibm.com",
+            "staging": "",
+            "dev": "",
+            "btseprov" : "https://eprovenance.transparentsupply.ibm.com"
+        },
+        "identity-proxy": {
+            "prod": "/ift/api/identity-proxy/exchange_token/v1/organization/",
+            "sandbox": "/ift/api/identity-proxy/exchange_token/v1/organization/",
+            "staging": "/ift/api/identity-proxy/exchange_token/v1/organization/",
+            "dev": "/ift/api/identity-proxy/exchange_token/v1/organization/",
+            "btseprov": "/ift/api/identity-proxy/exchange_token/v1/organization/"
+        },
+        "inbound": {
+            "prod":     "/fs/connector/v1/assets",
+            "sandbox":  "/fs/connector/v1/assets",
+            "staging":  "/fs/connector/v1/assets",
+            "dev":      "/fs/connector/v1/assets",
+            "btseprov": "/fs/connector/v1/assets"
+        },
+        "outbound": {
+            "locations": "/ift/api/outbound/v2/locations",
+            "products" : "/ift/api/outbound/v2/products",
+            "events"   : "/ift/api/outbound/v2/events",
+            "lots_and_serials" : "/ift/api/outbound/v2/lots_and_serials",
+            "trace_consumer"   : "/ift/api/outbound/v2/epcs/{epc_id}/trace/consumer"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ift:payload xmlns:ift="urn:ibm:ift:xsd:1">
+  <!-- XML message to communicate generic string-encoded payloads to IBM Food Trust.-->
+  <!-- NOTE : Comments for a field appear BELOW the field. -->
+
