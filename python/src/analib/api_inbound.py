@@ -44,12 +44,12 @@ class APIInbound:
         auth_token = "Bearer " + self.token['onboarding_token']
         post_header = {
             "Authorization": auth_token,
-            "Content-Type": "application/xml; charset=utf-8"
+            "Content-Type": "application/xml"
         }
         if self.header_entitled_org:
             post_header["IFT-Entitled-Orgs"] = self.header_entitled_org
             
-        post_data = xml_data
+        post_data = xml_data.encode('utf-8')
         post_url = utils.global_args.config['urls']['hosts'][self.env] + utils.global_args.config['urls']['inbound'][self.env]
 
         p = api_common.PostRequest(post_url, post_data, post_header, 4)

@@ -104,6 +104,7 @@ class Arguments:
         print_dict['eventsum'] = self.eventsum
         print_dict['outputxls'] = self.outputxls
         print_dict['mode'] = self.mode
+        print_dict['orgfile'] = self.MY_ORGS_FILE
         print_dict['inputxls'] = self.inputxls
         print_dict['inputxml'] = self.inputxml
         print_dict['isheets'] = ' '.join(map(str, self.isheets))
@@ -223,6 +224,9 @@ def parse_arguments():
     parser.add_argument("-e", "--env", type=str, required=True,
                         help="IFT environment/zone (prod|sandbox|dev|btseprov)")
 
+    parser.add_argument("-of", "--orgsfile", type=str, required=False,
+                        help="Org. details file (name, prefixes, apikey, etc.)")
+
     # there are 3 main modes of operation
     # 1. data input mode
     # 2. data output/trace mode
@@ -309,6 +313,9 @@ def parse_arguments():
     if (args.summary or args.gtinsum or args.humanize or args.eventsum or args.outputxls):
         if args.stats == False:
             quit('[summary | gtinsum | humanize | eventsum | outputxls] should go along with stats option.')
+
+    if args.orgsfile:
+        global_args.MY_ORGS_FILE = args.orgsfile
 
     global_args.orgsum = args.summary
     global_args.gtinsum = args.gtinsum
