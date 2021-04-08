@@ -15,11 +15,11 @@
             "btseprov": "/ift/api/identity-proxy/exchange_token/v1/organization/"
         },
         "inbound": {
-            "prod":     "/fs/connector/v1/assets",
-            "sandbox":  "/fs/connector/v1/assets",
-            "staging":  "/fs/connector/v1/assets",
-            "dev":      "/fs/connector/v1/assets",
-            "btseprov": "/fs/connector/v1/assets"
+            "prod":     "/ift/api/connector/fs/connector/v1/assets",
+            "sandbox":  "/ift/api/connector/fs/connector/v1/assets",
+            "staging":  "/ift/api/connector/fs/connector/v1/assets",
+            "dev":      "/ift/api/connector/fs/connector/v1/assets",
+            "btseprov": "/ift/api/connector/fs/connector/v1/assets"
         },
         "outbound": {
             "locations": "/ift/api/outbound/v2/locations",
