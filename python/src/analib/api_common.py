@@ -96,7 +96,8 @@ class Authenticate:
     env = "dev"
     config = {}
     debug_level = 3
-    IAM_URL = "https://iam.ng.bluemix.net/oidc/token"
+    #IAM_URL = "https://iam.ng.bluemix.net/oidc/token"
+    IAM_URL = "https://iam.cloud.ibm.com/identity/token"
     IDENTITY_PROXY = ""
 
     # initialize with api_key, org_id and env
